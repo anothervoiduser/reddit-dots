@@ -17,9 +17,7 @@
 ;==========================================================
 
 [colors]
-;background = #20ffffff
 background = #0D1014
-;background-alt = #373B41
 foreground = #ffffff
 primary = #F0C674
 secondary = #8ABEB7
@@ -32,8 +30,6 @@ height = 18pt
 padding = 3pt
 line-size = 2pt
 
-; dpi = 96
-
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -42,15 +38,11 @@ padding-right = 1
 
 module-margin = 5pt
 
-;separator = |
-;separator-foreground = ${colors.disabled}
-
-;font-0 = monospace;2
 font-0 = SF Pro Text:style=Medium:pixelsize=9;2
 font-1 = SFMono Nerd Font Mono:style=Light:pixelsize=13;2
 font-2 = SF Pro Text:style=Bold:pixelsize=9;2
 
-modules-left = logo finder flameshot i3
+modules-left = logo i3
 modules-right = xkeyboard battery network redshift datetime
 
 cursor-click = pointer
@@ -58,29 +50,9 @@ cursor-scroll = ns-resize
 
 enable-ipc = true
 
-; tray-position = right
-
-; wm-restack = generic
-; wm-restack = bspwm
-; wm-restack = i3
-
-; override-redirect = true
-
 [module/logo]
 type = custom/text
-content = 
-
-[module/finder]
-type = custom/text
-content = %{T3}Finder
-content-padding = 1
-click-left = dmenu &
-
-[module/flameshot]
-type = custom/text
-content = Screenshot
-content-padding = 1
-click-left = flameshot gui &
+content = 'Void_logo_here'
 
 [module/i3]
 type = internal/i3
@@ -137,5 +109,3 @@ date = %a %b %d  %H:%M %p
 [settings]
 screenchange-reload = true
 pseudo-transparency = true
-
-; vim:ft=dosini
